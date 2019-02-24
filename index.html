@@ -3,14 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>PHP Learning</title>
-  
-  
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <title>PrintGreen3D</title>
+    <link rel="shortcut icon" href="img/icone_novo.ico" >
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,7 +16,7 @@
     <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Entrar</label>
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Cadastrar</label>
     <div class="login-form">
-      <form class="sign-in-htm" action="./api/user/login.php" method="GET">
+      <form class="sign-in-htm" action="./api/user/cadastro.php" method="POST">
         <div class="group">
           <label for="user" class="label">E-mail</label>
           <input id="username" name="username" type="text" class="input">
@@ -41,7 +37,7 @@
           <a href="#forgot">Esqueceu a Senha?</a>
         </div>
       </form>
-      <form class="sign-up-htm" action="./api/user/signup.php" method="POST">
+      <form class="sign-up-htm" action="./api/user/cadastro.php" method="POST">
         <div class="group">
           <label for="user" class="label">E-mail</label>
           <input id="username" name="username" type="text" class="input">
@@ -65,9 +61,5 @@
     </div>
   </div>
 </div>
-  
-  
-
 </body>
-
 </html>
